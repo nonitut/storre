@@ -301,8 +301,8 @@ select[name="type"]{
     overflow-y: auto;
 }
 
-#cart-sidebar#show {
-    right: 0vw;
+#cart-sidebar.show {
+    left: 70vw;
 }
 
 #close-cart{
