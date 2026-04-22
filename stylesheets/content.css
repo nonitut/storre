@@ -324,3 +324,88 @@ select[name="type"]{
     margin-left: -1.1vw;
     margin-top: 1.3vw;
 }
+
+
+#cart-items > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 12px;
+  margin-bottom: 12px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  background: #fff;
+}
+
+#cart-items img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* название товара */
+#cart-items strong {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* блок управления количеством */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* кнопки + - */
+.cart-controls button {
+  width: 28px;
+  height: 28px;
+
+  border: none;
+  border-radius: 6px;
+  background: #ddd;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-controls button:hover {
+  background: #ccc;
+}
+
+/* input количества */
+.cart-controls input {
+  width: 32px;
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+
+/* кнопка удалить */
+#cart-items .remove {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#cart-items .remove:hover {
+  background: #e60000;
+}
+
+/* общий контейнер корзины */
+#cart-items > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
