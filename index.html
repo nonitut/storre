@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr"> <!-- lefttablerow - выравнимает текст слева изначально -->
+  <head>
+    <meta charset="utf-8">                            <!-- кодирования, работающая по стандарту Unicode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article">       <!-- тип добавляемого материала, например, «article» – статья, «movie» — кино и так далее; -->
+    <meta property="og:url" content="{ссылка}">       <!-- ссылка на саму веб-страницу, которая добавляется в социальную сеть -->
+    <meta property="og:title" content="название">     <!-- название материала; -->
+    <meta property="og:description" content="текст">  <!-- описание материала, заполнять не обязательно; -->
+    <meta property="og:image" content="{картинка}">   <!-- ссылка на картинку, которая должна сопровождать материал; -->
+    <title>...</title> <!-- Write here your project name -->
+      <link rel="icon" href="./images/favicon.png"> <!-- отображаетмя в шапке - важно не забывать -->
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script src="./javascripts/java-script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <section class="menubar">
+      <!--  -->
+      <a href="./index.html"><img src="" alt="logo"></a>
+      <div class="list_container">
+        <div class="menu">
+          <p>menu</p><p>↓</p>
+        </div>
+        <ul class="li-list">
+          <li><a href="./banana.html">Банан</a></li>
+          <li><a href="./avocado.html">Авокадо</a></li>
+          <li><a href="./strawberry.html">Клубника</a></li>
+          <li><a href="./orange.html">Апельсин</a></li>
+          <li><a href="./pitahaya.html">Питахайа</a></li>
+        </ul>
+      </div>
+      <div><img src="" alt="basket"></div>
+    </section>
+
+    <div class="banner">
+      <div class="color-block">
+        <div class="circle cl0"></div>
+        <div class="circle cl1"></div>
+        <div class="circle cl2"></div>
+        <div class="circle cl3"></div>
+      </div>
+      <h1>Фруктоленд - купи билет в лето </h1>
+    </div>
+
+    <form action="index.html" method="post">
+      <p> Оформите билет <a href="#">инфо</a> </p>
+      <div class="form-split">
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваша фамилия">
+      </div>
+      <h3>Ваша страна и Город </h3>
+      <select name="" id="">
+        <option value="">Россия / Москва </option>
+        <option value="">Россия / Тула </option>
+        <option value="">Россия / Киров </option>
+        <option value="">Россия / Серпухов </option>
+      </select> <br>
+      <h3>Укажите вашу дату рождения</h3>
+      <input type="date"> <br>
+      <h3>Укажите вашу дату рождения</h3><br>
+      <input type="email" placeholder="email.com">
+      <h3>Укажите вашу дату рождения</h3><br>
+      <input type="number" placeholder="+7 880 800 80 90"><br>
+      <span>Будьте внимательны при вводе вашего номера телефона.
+        На него будет приходить код для верификации</span>
+       <div class="flexim"><input type="radio" name="phone"><p class="texic"> Код в сообщении</p></div> 
+       <div class="flexim"><input type="radio" name="phone"><p class="texic"> Звонок</p></div> 
+       <hr>
+       <div  class="flexim"><input type="checkbox"><p class="texic">Даю согласие на обработку данных</p></div>
+       <div  class="flexim"><input type="checkbox"><p class="texic">Согласен с политикой конфеденциальности</p></div>
+       <div  class="flexim"><input type="checkbox"><p class="texic">Даю согласие на рекламную рассылку</p></div>
+       <hr>
+       <button type="submit" class="buttonsmain"><a href="404.html">Оформить билет</a></button>
+    </form>
+    <!-- <div class="popup_finish">
+      <p>Вы успешно оформили свой билет. 
+        Вы его можете скачать у себя на почте</p>
+    </div> -->
+
+    <footer>
+      footer
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,326 @@
+*{ box-sizing: border-box;}
+html, body{ 
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    background: bisque;
+}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p{ font-family: 'CarlaSansLight'; }
+
+
+.menubar{
+position: relative;
+/*  */
+margin-left: 1vw;
+margin-right: 1vw;
+margin-top: 1vw;
+width: 98vw;
+height: 4vw;
+padding: 1.2vw;
+display: flex;
+justify-content: space-between;
+border-radius: 10vw;
+background: lavenderblush;
+}
+
+.menu{
+position: relative;
+/* display: flex; */
+display: none;
+}
+
+.list_container{
+position: relative;
+display: flex;
+}
+
+.li-list{
+position: relative;
+display: flex;
+gap: 1vw;
+margin: 0 1vw;
+}
+
+.li-list > li > a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: cornflowerblue;
+}
+
+form{
+    position: relative;
+    width: 30vw;
+    margin: 1vw auto;
+}
+
+input[type="text"],input[type="date"], input[type="email"], 
+input[type="number"], select  {
+    padding: 0.2vw 1vw;
+    font-size: 1vw ;
+    color: rgb(101, 101, 101) ;
+    margin: 0.4vw auto;
+    border-radius: 0.2vw;
+    border: none;
+}
+
+form > p, form > h3, form > span{
+    font-size: 1.2vw ; 
+    color: rgb(36, 36, 36);
+    margin-top: 0.6vw;
+}
+
+.texic{
+     font-size: 0.8vw ; 
+     margin-top: 0.2vw;
+}
+
+button{
+    font-size: 1.2vw ;  
+    line-height: 1.4vw;
+    font-weight: 600;
+    background: navy;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 0.2vw 1vw;
+    text-align: center;
+    border: none;
+    border-radius: 2vw;
+}
+button:hover{
+   background: rgb(42, 42, 200); 
+   transition: all 0.2s linear;
+}
+
+button > a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1vw ;  
+}
+
+.flexim{ display: flex;}
+
+.banner, .first_banner{
+    position: relative;
+    background: black;
+    width: 100vw;
+    height: 20vw;
+    margin-top: 1vw;
+    color: aliceblue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 20vw;
+    font-size: 4vw;
+    overflow: hidden;
+}
+
+.color-block{
+    position: absolute;
+     width: 100vw;
+    height: 20vw;
+}
+
+.circle{
+position: absolute;
+    width: 10vw;
+    height: 10vw;
+    /* background: rosybrown; */
+    filter: blur(140px);
+}
+
+.cl0{
+    background: red;
+    animation: redy 12s linear infinite;
+}
+.cl1{
+    background: rgb(0, 128, 255);
+    animation: by 12s linear infinite;
+}
+.cl2{
+    background: rgb(0, 255, 8);
+    animation: gry 12s linear infinite;
+}
+.cl3{
+    background: rgb(255, 217, 0);
+    animation: yey 12s linear infinite;
+}
+
+@keyframes redy{
+    0%{ top: 10% ; left: 80%; }
+    50%{ top: 60% ; left: 20%; }
+    100%{ top: 10% ; left: 80%; }
+}
+
+@keyframes by{
+    0%{ top: 100% ; left: 100%; }
+    50%{ top: 50% ; left: 0%; }
+    100%{ top: 100% ; left: 100%; }
+}
+
+@keyframes gry{
+    0%{ top: 0% ; left: 0%; }
+    50%{ top: 70% ; left: 100%; }
+    100%{ top: 0% ; left: 0%; }
+}
+
+@keyframes yey{
+    0%{ top: 100% ; left: 0%; }
+    50%{ top: 100% ; left: 100%; }
+    100%{ top: 100% ; left: 0%; }
+}
+
+
+table{
+    margin-top: 1vw;
+    overflow: hidden;
+}
+table , .new_row{
+    width: 94%;
+    position: relative;
+    margin-left: 3%;
+    border-collapse: collapse;
+    font-size: 1vw;
+    background: #fff;
+    border-radius: 1vw;
+}
+
+th, td{
+    border: 1px solid black;  text-align: left; 
+    font-weight: 400; padding: 0.5vw;}
+
+th{  color: #999;}
+th:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+td > span {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin: 0 4px 4px 0;
+}
+.sp_red{
+    background: rgb(255, 131, 131);
+}
+.sp_green{
+     background: rgb(176, 253, 176)
+}
+
+.avocado_button{
+    color: black;
+    width: 4vw;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+}
+.avocado_button:hover{
+ background-color: rgb(255, 0, 204);
+ color: #eee;
+}
+
+input[type="text"] {
+    width: 10vw;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    border: none;
+    outline: none;
+}
+
+input[name="name_of"]{
+    width: 28vw;
+}
+
+input[ name="date"]{
+    outline: none;
+     width: 18vw;
+}
+
+select[name="type"]{
+    width: 16vw;
+}
+
+.tut{
+    text-decoration: underline!important;
+}
+
+
+.cart{
+    font-size: 2;
+}
+
+.basket{
+    position: relative;
+    width: 60%;
+    margin-top: -0.5vw;
+}
+
+.product-card{
+    font-size: 2vw;
+    position: relative;
+    width: 22vw;
+    border: 1px solid #ddd;
+    padding: 1vw;
+    margin: 2vw;
+    background: #ddd;
+    border-radius: 1vw;
+}
+
+.product-img{
+    position: relative;
+    width: 100%;
+}
+
+.flexcard{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cart-sidebar{
+    position: fixed;
+    top: 0vw;
+    /* left: 0; */
+    right: -35vw;
+    width: 30vw ;
+    height: 100vw;
+    background-color: white;
+    box-shadow: -2px 0 5px #dddddd21;
+    padding: 1vw;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+#cart-sidebar#show {
+    right: 0vw;
+}
+
+#close-cart{
+    background: red;
+    color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+#close-cart:hover{
+    background: brown;
+}
+
+#cart-count{
+    background: #ffee35fb;
+    border-radius: 100%;
+    font-size: 1.5vw;
+    position: absolute;
+    margin-left: -1.1vw;
+    margin-top: 1.3vw;
+}
